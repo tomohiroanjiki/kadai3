@@ -1,0 +1,10 @@
+<h3>Users</h3>
+<tbody>
+  <% @users.each do |user|%>
+  <tr>
+    <td><%= user.profile_image %></td>
+    <td><%= user.name %></td>
+    <td>link_to "Show", "/users/#{users.id}" </td>
+  </tr>
+  <% end %>
+</tbody>
